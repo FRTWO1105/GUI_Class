@@ -10,18 +10,24 @@ using System.Windows.Forms;
 
 namespace N11310017_GUI_Class
 {
-    public partial class Form1 : Form
+    public partial class FormButton : Form
     {
-        public Form1()
+        public FormButton()
         {
             InitializeComponent();
         }
 
+        private void btnClick_Click(object sender, EventArgs e)
+        {
+            
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            //btnButton.Text = "我已經按過ㄌ";
-            Form form = new FormButton();
-            form.Show();
+if (btnClick.Text == "請按我一下")
+                btnClick.Text = "我已經按過ㄌ";
+            else if (btnClick.Text == "我已經被按過ㄌ")
+                btnClick.Text = "請按我一下";
         }
     }
 }
