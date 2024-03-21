@@ -21,7 +21,12 @@ namespace N11310017_GUI_Class
         {
             //btnButton.Text = "我已經按過ㄌ";
             Form form = new FormButton();
-            form.Show();
+            form.Show(); 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
