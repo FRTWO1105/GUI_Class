@@ -28,5 +28,11 @@ namespace N11310017_GUI_Class
         {
 
         }
+
+        private void btnTextBox_Click(object sender, EventArgs e)
+        {
+            Form formTextBox = new FormTextBox();
+            formTextBox.Show();
+        }
     }
 }
