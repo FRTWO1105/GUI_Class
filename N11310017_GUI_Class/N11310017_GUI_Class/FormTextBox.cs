@@ -31,5 +31,12 @@ namespace N11310017_GUI_Class
         {
             label1.Text = tbInput.Text;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int a = Int32.Parse(textBox2.Text);
+            int z = Int32.Parse(textBox3.Text);
+            label4.Text = (a+z).ToString();
+        }
     }
 }
