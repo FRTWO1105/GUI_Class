@@ -40,5 +40,10 @@ namespace N11310017_GUI_Class
             Form form = new FormTimer();
             form.Show();    
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

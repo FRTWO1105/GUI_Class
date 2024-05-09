@@ -11,3 +11,4 @@ C:\Users\MEGAS\Desktop\GUI_Class\N11310017_GUI_Class\N11310017_GUI_Class\obj\Deb
 C:\Users\MEGAS\Desktop\GUI_Class\N11310017_GUI_Class\N11310017_GUI_Class\obj\Debug\N11310017_GUI_Class.FormButton.resources
 C:\Users\MEGAS\Desktop\GUI_Class\N11310017_GUI_Class\N11310017_GUI_Class\obj\Debug\N11310017_GUI_Class.FormTextBox.resources
 C:\Users\MEGAS\Desktop\GUI_Class\N11310017_GUI_Class\N11310017_GUI_Class\obj\Debug\N11310017_GUI_Class.FormTimer.resources
+C:\Users\MEGAS\Desktop\GUI_Class\N11310017_GUI_Class\N11310017_GUI_Class\obj\Debug\N11310017_GUI_Class.FromGame.resources
