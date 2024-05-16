@@ -53,6 +53,7 @@
             this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 1;
             this.label1.Text = "按開始";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button2
             // 
@@ -62,6 +63,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "猜猜";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
@@ -91,6 +93,7 @@
             this.Controls.Add(this.button1);
             this.Name = "FromGame";
             this.Text = "FromGame";
+            this.Load += new System.EventHandler(this.FromGame_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
