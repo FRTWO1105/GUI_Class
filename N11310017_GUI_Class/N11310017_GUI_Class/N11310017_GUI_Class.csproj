@@ -58,6 +58,12 @@
     <Compile Include="FormButton.Designer.cs">
       <DependentUpon>FormButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCheckbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckbox.Designer.cs">
+      <DependentUpon>FormCheckbox.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTextBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormButton.resx">
       <DependentUpon>FormButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckbox.resx">
+      <DependentUpon>FormCheckbox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTextBox.resx">
       <DependentUpon>FormTextBox.cs</DependentUpon>

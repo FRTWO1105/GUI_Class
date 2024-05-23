@@ -47,6 +47,12 @@ namespace N11310017_GUI_Class
             form.Show();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            Form form = new FormCheckbox();
+            form.Show();
+        }
     }
     }
 
