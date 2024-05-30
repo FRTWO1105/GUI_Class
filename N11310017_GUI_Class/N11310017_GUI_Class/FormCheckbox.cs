@@ -24,5 +24,38 @@ namespace N11310017_GUI_Class
             else
                 MessageBox.Show("方塊已被取消");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            foreach(Control c in panel1.Controls)
+            {
+
+
+                if(c is CheckBox)
+                { 
+                    CheckBox chk = (CheckBox)c;
+                    if (chk.Checked)
+                    { 
+                        MessageBox.Show(chk.Text);
+                    }
+                }
+            }
+        }
+
     }
 }
