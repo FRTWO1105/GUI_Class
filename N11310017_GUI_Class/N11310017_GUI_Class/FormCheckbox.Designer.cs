@@ -141,6 +141,7 @@
             this.checkBox8.TabIndex = 6;
             this.checkBox8.Text = "牛奶";
             this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // checkBox7
             // 

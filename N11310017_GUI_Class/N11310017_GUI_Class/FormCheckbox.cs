@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace N11310017_GUI_Class
 {
@@ -15,6 +16,8 @@ namespace N11310017_GUI_Class
         public FormCheckbox()
         {
             InitializeComponent();
+            if (!File.Exists("OrderData.csv"))
+                File.WriteAllText("OrderData.csv", "時間,主食,配餐\n",Encoding.UTF8);
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -52,7 +55,7 @@ namespace N11310017_GUI_Class
                     CheckBox chk = (CheckBox)c;
                     if (chk.Checked)
                     {
-                        main +=chk.Text+",";//main=main+chk.Text
+                        main +=chk.Text+" ";//main=main+chk.Text
                         //MessageBox.Show(chk.Text);
                     }
                     
@@ -69,7 +72,7 @@ namespace N11310017_GUI_Class
                     CheckBox chk = (CheckBox)c;
                     if (chk.Checked)
                     {
-                        drinking +=chk.Text+",";//main=main+chk.Text
+                        drinking +=chk.Text+" ";//main=main+chk.Text
                                                 //MessageBox.Show(chk.Text);
                     }
 
@@ -79,12 +82,20 @@ namespace N11310017_GUI_Class
             main = main.Remove(main.Length-1, 1);
             drinking=drinking.Remove(drinking.Length-1, 1);
 
-            MessageBox.Show("主餐:"+main+"\n飲料:"+drinking);
+            DateTime currentDateTime=DateTime.Now;
+            String orderTime = currentDateTime.ToString("yyyy/MM/dd HH:mm:ss");
+            File.AppendAllText("OrderData.csv", orderTime+","+main+","+drinking+"\n");
+            //MessageBox.Show("主餐:"+main+"\n飲料:"+drinking);
+            MessageBox.Show("點餐成功!!");
 
 
 
         }
 
+        private void checkBox8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
